@@ -1,0 +1,135 @@
+/* Hamburger icon */
+
+.hamburger {
+  display: block;
+  cursor: pointer;
+}
+
+/* Navbar CSS */
+nav {
+  padding: 5% 10%;
+}
+nav ul {
+  box-sizing: border-box;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 69px;
+  z-index: 1;
+  background-color: var(--dark-violet);
+  height: 0;
+  overflow: hidden;
+  width: 100%;
+  left: 0;
+  background-image: url(images/bg-pattern-mobile-nav.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  transition: all 400ms ease;
+}
+
+/* Active nav state when clicked on hamburger icon */
+.active-nav {
+  padding: 5% 0 0 0;
+  height: 95%;
+}
+
+nav ul li {
+  padding: 5% 0;
+}
+
+nav ul li a {
+  color: white;
+}
+
+nav ul li:last-child {
+  padding: 13px 25px;
+  border: 2px solid white;
+}
+
+nav ul li:last-child a {
+  color: white;
+}
+
+/* Header Section */
+header {
+  text-align: center;
+  flex-direction: column-reverse;
+  padding: 0;
+  height: 100%;
+}
+
+header h1 {
+  position: relative;
+  z-index: 2;
+}
+header div:last-child img:first-child {
+  bottom: -156px;
+  top: unset;
+}
+
+header div:last-child img:last-child {
+  width: 100vw;
+}
+header div:first-child {
+  padding: 25% 7%;
+  position: relative;
+}
+header div:first-child img {
+  top: 0;
+}
+header div:first-child::before {
+  display: none;
+}
+
+/* We're different --Section */
+main {
+  margin-top: 150px;
+  text-align: center;
+  padding: 0% 7%;
+}
+
+main h1::before {
+  margin-left: 24vw;
+}
+
+/* Cards --Snappy,Affordable,People */
+.container {
+  grid-template-columns: 1fr;
+}
+
+/* How we work--Section */
+.howwework {
+  flex-direction: column;
+  background-image: url(images/bg-pattern-how-we-work-mobile.svg);
+}
+.howwework p {
+  font-size: 2rem;
+}
+.howwework div {
+  margin-left: 0;
+}
+
+/* Footer --Section */
+footer {
+  text-align: center;
+  background-image: url(images/bg-pattern-footer-mobile.svg);
+}
+
+/* Footer logo and social media links */
+
+footer div:first-child {
+  flex-direction: column;
+  padding: 17%;
+}
+
+footer div:first-child div {
+  padding-top: 13%;
+}
+
+/* Footer other links */
+
+footer .links {
+  grid-template-columns: 1fr;
+  gap: 0;
+}
